@@ -14,20 +14,20 @@ public class CheckboxesPage extends BasePage{
     @FindBy(xpath = "//*[@id=\"checkboxes\"]/input[1]") private WebElement checkbox1;
     @FindBy(xpath = "//*[@id=\"checkboxes\"]/input[2]") private WebElement checkbox2;
 
-    public void clickCheckbox1 (String checkbox){
+    public void clickCheckbox1 (){
         checkbox1.click();
     }
-    public void clickCheckbox2 (String checkboxb){
+    public void clickCheckbox2 (){
         if (!checkbox2.isSelected()){
             checkbox2.click();
         }
     }
-    public void deselectezCheckbox1 (String checkbox){
+    public void deselectezCheckbox1 (){
         if (checkbox1.isSelected()){
             checkbox1.click();
         }
     }
-    public void deselectezCheckbox2 (String checkboxb){
+    public void deselectezCheckbox2 (){
         if (checkbox2.isSelected()){
             checkbox2.click();
         }

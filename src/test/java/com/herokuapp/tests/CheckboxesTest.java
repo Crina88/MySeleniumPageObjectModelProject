@@ -12,17 +12,14 @@ public class CheckboxesTest extends BaseTest{
     public void checkboxesTest(){
         driver.get(LOGIN_URL);
         CheckboxesPage checkboxesPage = new CheckboxesPage(driver);
-        checkboxesPage.clickCheckbox1("click");
+        checkboxesPage.clickCheckbox1();
         Assert.assertTrue(checkboxesPage.clickSuccessCheckbox1IsTrue());
-        checkboxesPage.clickCheckbox2("click");
+        checkboxesPage.clickCheckbox2();
         Assert.assertTrue(checkboxesPage.clickSuccessCheckbox2IsTrue());
-        checkboxesPage.deselectezCheckbox1("click");
+        checkboxesPage.deselectezCheckbox1();
         Assert.assertFalse(checkboxesPage.clickSuccessCheckbox1IsTrue());
-        checkboxesPage.deselectezCheckbox2("click");
+        checkboxesPage.deselectezCheckbox2();
         Assert.assertFalse(checkboxesPage.clickSuccessCheckbox2IsTrue());
-
-
-
 
     }
 }

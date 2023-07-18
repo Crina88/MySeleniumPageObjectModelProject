@@ -11,9 +11,9 @@ public class DropdownTest extends BaseTest{
     public void dropdownTest(){
         driver.get(LOGIN_URL);
         DropdownPage dropdownPage = new DropdownPage(driver);
-        dropdownPage.clickOptiunea1("click");
+        dropdownPage.clickOptiunea1();
         Assert.assertTrue(dropdownPage.clickSuccesfulOptiunea1());
-        dropdownPage.clickOptiunea2("click");
+        dropdownPage.clickOptiunea2();
         Assert.assertTrue(dropdownPage.clickSuccesfilOptiunea2());
 
 

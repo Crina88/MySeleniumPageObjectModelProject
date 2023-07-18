@@ -16,11 +16,11 @@ public class DropdownPage extends BasePage {
     @FindBy(xpath ="//*[@id=\"dropdown\"]/option[3]") private WebElement optiunea2;
 
 
-    public void clickOptiunea1(String optiunea) {
+    public void clickOptiunea1() {
         optiunea1.click();
 
     }
-    public void clickOptiunea2(String optiunnea){
+    public void clickOptiunea2(){
         optiunea2.click();
     }
     public boolean clickSuccesfulOptiunea1(){return optiunea1.isSelected();}
